@@ -52,7 +52,7 @@ passport.use(new GoogleStrategy({
 }, 
 
     (accessToken,refreshToken,profile,cb) => {
-        console.log(chalk.red(JSON.stringify(profile)))
+        console.log(chalk.blue(JSON.stringify(profile)))
         user = {...profile}
         return cb(null, profile)
     }))
@@ -72,7 +72,7 @@ passport.use(new InstagramStrategy({
 }, 
 
     (accessToken,refreshToken,profile,cb) => {
-        console.log(chalk.orange(JSON.stringify(profile)))
+        console.log(chalk.blue(JSON.stringify(profile)))
         user = {...profile}
         return cb(null, profile)
     }))
