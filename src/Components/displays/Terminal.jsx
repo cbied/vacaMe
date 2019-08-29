@@ -1,10 +1,11 @@
-import React from 'React';
+import React from 'react';
 
 const Terminal = ({ userData, selected }) => {
     const selectedData = selected === 'All' ? userData : userData[selected];
     const jsonCode = JSON.stringify(selectedData, null, 4);
 
-    <div className="window">
+    return (
+<div className="window">
         <div className="title-bar">
             <div className="buttons">
                 <div className="mac-btn close" />
@@ -19,6 +20,8 @@ const Terminal = ({ userData, selected }) => {
             </div>
         </div>
     </div>
+    )
+    
 }
 
 export default Terminal

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Card = ({ img, name, href, color }) => {
-    const NAME = name.charAt(0).toUpperCase() + name.subString(1,name.length);
+    const NAME = name.charAt(0).toUpperCase() + name.substring(1,name.length);
 
 
     return ( 
